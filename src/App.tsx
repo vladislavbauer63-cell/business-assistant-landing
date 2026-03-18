@@ -675,13 +675,13 @@ export default function BusinessAssistantLanding() {
 
                         return (
                           <span
-                            key={strength}
-                            className={`rounded-full border border-white/10 bg-white/[0.05] px-3 py-2 text-center text-xs text-zinc-200 md:px-4 md:py-3 md:text-sm ${
-                              isLastOdd ? 'col-span-2' : ''
-                            }`}
-                          >
-                            {strength}
-                          </span>
+  key={strength}
+  className={`flex min-h-[52px] items-center justify-center rounded-full border border-white/10 bg-white/[0.05] px-3 text-center text-xs leading-tight text-zinc-200 md:min-h-[56px] md:px-4 md:text-sm ${
+    isLastOdd ? 'col-span-2' : ''
+  }`}
+>
+  {strength}
+</span>
                         )
                       })}
                     </div>
