@@ -671,38 +671,69 @@ export default function BusinessAssistantLanding() {
             </motion.div>
           </section>
 
-          <section className={`${shell} py-24`}>
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={stagger}>
-              <SectionTitle
-                badge="Кто вам нужен на самом деле"
-                title="Обычный ассистент и сильная правая рука - это разные роли"
-                text="Именно это различие чаще всего определяет, станет ли найм усилением бизнеса или еще одной точкой контроля для собственника."
-                icon={Workflow}
-              />
+          <section className={`${shell} py-20 md:py-24`}>
+  <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={stagger}>
+    <SectionTitle
+      badge="Кто вам нужен на самом деле"
+      title="Обычный ассистент и сильная правая рука - это разные роли"
+      text="Именно это различие чаще всего определяет, станет ли найм усилением бизнеса или еще одной точкой контроля для собственника."
+      icon={Workflow}
+    />
 
-              <motion.div variants={fadeUp} className={`${cardBase} mt-14 overflow-hidden`}>
-                <div className="grid border-b border-white/10 bg-white/[0.03] md:grid-cols-2">
-                  <div className="flex items-center justify-center px-7 py-6 text-center text-base font-semibold uppercase tracking-[0.2em] text-zinc-400">
-  Обычный ассистент
-</div>
-<div className="border-t border-white/10 flex items-center justify-center px-7 py-6 text-center text-base font-semibold uppercase tracking-[0.2em] text-violet-200 md:border-l md:border-t-0">
-  Сильный бизнес-ассистент
-</div>
-                </div>
+    <motion.div variants={fadeUp} className="mt-12">
+      {/* Телефон */}
+      <div className="grid gap-4 md:hidden">
+        {compare.map((row, idx) => (
+          <div key={idx} className={`${cardBase} overflow-hidden`}>
+            <div className="border-b border-white/10 bg-white/[0.03] px-5 py-4 text-center text-[11px] font-semibold uppercase tracking-[0.14em] text-zinc-400">
+              Обычный ассистент
+            </div>
+            <div className="px-5 py-5 text-center text-sm leading-6 text-zinc-300">
+              {row.weak}
+            </div>
 
-                {compare.map((row, idx) => (
-                  <div key={idx} className="grid md:grid-cols-2">
-                    <div className="border-b border-white/10 flex items-center justify-center px-7 py-6 text-center text-base leading-8 text-zinc-400 md:border-r">
-  {row.weak}
-</div>
-<div className="border-b border-white/10 flex items-center justify-center px-7 py-6 text-center text-base leading-8 text-zinc-200">
-  {row.strong}
-</div>
-                  </div>
-                ))}
-              </motion.div>
-            </motion.div>
-          </section>
+            <div className="border-y border-white/10 bg-white/[0.03] px-5 py-4 text-center text-[11px] font-semibold uppercase tracking-[0.14em] text-violet-200">
+              Сильный бизнес-ассистент
+            </div>
+            <div className="px-5 py-5 text-center text-sm leading-6 text-white">
+              {row.strong}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Планшет / десктоп */}
+      <div className={`${cardBase} hidden overflow-hidden md:block`}>
+        <table className="w-full table-fixed border-collapse">
+          <thead>
+            <tr className="bg-white/[0.03]">
+              <th className="w-1/2 border-b border-r border-white/10 px-5 py-5 text-center align-middle text-sm font-semibold uppercase tracking-[0.16em] text-zinc-400 lg:px-7 lg:py-6 lg:text-base lg:tracking-[0.2em]">
+                Обычный ассистент
+              </th>
+              <th className="w-1/2 border-b border-white/10 px-5 py-5 text-center align-middle text-sm font-semibold uppercase tracking-[0.16em] text-violet-200 lg:px-7 lg:py-6 lg:text-base lg:tracking-[0.2em]">
+                Сильный бизнес-ассистент
+              </th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {compare.map((row, idx) => (
+              <tr key={idx}>
+                <td className="w-1/2 border-b border-r border-white/10 px-5 py-5 text-center align-middle text-sm leading-7 text-zinc-400 lg:px-7 lg:py-6 lg:text-base lg:leading-8">
+                  <div className="mx-auto max-w-[85%] break-words">{row.weak}</div>
+                </td>
+
+                <td className="w-1/2 border-b border-white/10 px-5 py-5 text-center align-middle text-sm leading-7 text-zinc-200 lg:px-7 lg:py-6 lg:text-base lg:leading-8">
+                  <div className="mx-auto max-w-[85%] break-words">{row.strong}</div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </motion.div>
+  </motion.div>
+</section>
 
           <section className={`${shell} py-24`}>
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={stagger}>
