@@ -405,121 +405,121 @@ export default function BusinessAssistantLanding() {
 
         <main>
           <section className={`${shell} relative pb-20 pt-20 md:pb-28 md:pt-28`}>
-  <div className="grid min-h-[calc(100vh-110px)] items-center gap-12 xl:grid-cols-2">
-    <motion.div
-      initial="hidden"
-      animate="visible"
-      variants={stagger}
-      className="mx-auto w-full max-w-[760px]"
-    >
-      <motion.div
-        variants={fadeUp}
-        className="mb-8 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm uppercase tracking-[0.24em] text-violet-200/90 backdrop-blur"
-      >
-        <Sparkles className="h-4 w-4" />
-        Ассистенты для бизнеса
-      </motion.div>
+            <div className="grid min-h-[calc(100vh-110px)] items-center gap-12 xl:grid-cols-2">
+              <motion.div
+                initial="hidden"
+                animate="visible"
+                variants={stagger}
+                className="mx-auto w-full max-w-[760px]"
+              >
+                <motion.div
+                  variants={fadeUp}
+                  className="mb-8 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm uppercase tracking-[0.24em] text-violet-200/90 backdrop-blur"
+                >
+                  <Sparkles className="h-4 w-4" />
+                  Ассистенты для бизнеса
+                </motion.div>
 
-      <motion.h1
-        variants={fadeUp}
-        className="text-5xl font-semibold leading-[0.98] tracking-tight text-white md:text-6xl xl:text-[4.1rem]"
-      >
-        Подбираем бизнес-ассистентов, которые становятся{' '}
-        <span className="bg-gradient-to-r from-violet-200 via-fuchsia-200 to-violet-400 bg-clip-text text-transparent">
-          правой рукой предпринимателя
-        </span>
-        , а не еще одним сотрудником под контроль
-      </motion.h1>
+                <motion.h1
+                  variants={fadeUp}
+                  className="text-5xl font-semibold leading-[0.98] tracking-tight text-white md:text-6xl xl:text-[4.1rem]"
+                >
+                  Подбираем бизнес-ассистентов, которые становятся{' '}
+                  <span className="bg-gradient-to-r from-violet-200 via-fuchsia-200 to-violet-400 bg-clip-text text-transparent">
+                    правой рукой предпринимателя
+                  </span>
+                  , а не еще одним сотрудником под контроль
+                </motion.h1>
 
-      <motion.p
-        variants={fadeUp}
-        className="mt-8 text-lg leading-8 text-zinc-300 md:text-xl"
-      >
-        Более 2 лет ищем сильных ассистентов под реальные бизнес-задачи:
-        управление проектами, контроль процессов, координация команды,
-        поддержка собственника в росте компании.
-      </motion.p>
+                <motion.p
+                  variants={fadeUp}
+                  className="mt-8 text-lg leading-8 text-zinc-300 md:text-xl"
+                >
+                  Более 2 лет ищем сильных ассистентов под реальные бизнес-задачи:
+                  управление проектами, контроль процессов, координация команды,
+                  поддержка собственника в росте компании.
+                </motion.p>
 
-      <motion.div variants={fadeUp} className="mt-10 flex flex-col gap-4 sm:flex-row">
-        <a
-          href="#candidates"
-          onClick={scrollToSection('candidates')}
-          className="inline-flex min-h-[76px] items-center justify-center rounded-[1.6rem] bg-white px-10 py-5 text-lg font-semibold text-zinc-900 transition hover:translate-y-[-1px] sm:flex-1"
-        >
-          Посмотреть кандидатов
-        </a>
+                <motion.div variants={fadeUp} className="mt-10 flex flex-col gap-4 sm:flex-row">
+                  <a
+                    href="#candidates"
+                    onClick={scrollToSection('candidates')}
+                    className="inline-flex min-h-[76px] items-center justify-center rounded-[1.6rem] bg-white px-10 py-5 text-lg font-semibold text-zinc-900 transition hover:translate-y-[-1px] sm:flex-1"
+                  >
+                    Посмотреть кандидатов
+                  </a>
 
-        <a
-          href="#cta"
-          onClick={scrollToSection('cta')}
-          className="inline-flex min-h-[76px] items-center justify-center rounded-[1.6rem] border border-white/10 bg-white/5 px-10 py-5 text-lg font-semibold text-white transition hover:border-violet-300/30 hover:bg-violet-500/10 sm:flex-1"
-        >
-          Получить подборку
-        </a>
-      </motion.div>
+                  <a
+                    href="#cta"
+                    onClick={scrollToSection('cta')}
+                    className="inline-flex min-h-[76px] items-center justify-center rounded-[1.6rem] border border-white/10 bg-white/5 px-10 py-5 text-lg font-semibold text-white transition hover:border-violet-300/30 hover:bg-violet-500/10 sm:flex-1"
+                  >
+                    Получить подборку
+                  </a>
+                </motion.div>
 
-      <motion.div variants={fadeUp} className="mt-10 grid gap-4 md:grid-cols-3">
-        {[
-          { value: '2+ года', label: 'в подборе ассистентов' },
-          { value: '300+', label: 'сильных ассистентов' },
-          { value: 'Экономия', label: 'времени собственника' },
-        ].map((item) => (
-          <div key={item.label} className={`${cardBase} p-6`}>
-            <div className="text-3xl font-semibold text-white">{item.value}</div>
-            <div className="mt-2 text-base leading-6 text-zinc-400">{item.label}</div>
-          </div>
-        ))}
-      </motion.div>
-    </motion.div>
+                <motion.div variants={fadeUp} className="mt-10 grid gap-4 md:grid-cols-3">
+                  {[
+                    { value: '2+ года', label: 'в подборе ассистентов' },
+                    { value: '300+', label: 'сильных ассистентов' },
+                    { value: 'Экономия', label: 'времени собственника' },
+                  ].map((item) => (
+                    <div key={item.label} className={`${cardBase} p-6`}>
+                      <div className="text-3xl font-semibold text-white">{item.value}</div>
+                      <div className="mt-2 text-base leading-6 text-zinc-400">{item.label}</div>
+                    </div>
+                  ))}
+                </motion.div>
+              </motion.div>
 
-    <motion.div
-      initial={{ opacity: 0, x: 30 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.75, ease: 'easeOut', delay: 0.15 }}
-      className="relative mx-auto w-full max-w-[760px]"
-    >
-      <div className="absolute inset-0 rounded-[2.4rem] bg-gradient-to-br from-violet-500/15 via-fuchsia-500/5 to-transparent blur-2xl" />
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.75, ease: 'easeOut', delay: 0.15 }}
+                className="relative mx-auto w-full max-w-[760px]"
+              >
+                <div className="absolute inset-0 rounded-[2.4rem] bg-gradient-to-br from-violet-500/15 via-fuchsia-500/5 to-transparent blur-2xl" />
 
-      <div className={`${cardBase} relative overflow-hidden p-10 shadow-2xl xl:p-12`}>
-        <div className="flex items-center justify-between border-b border-white/10 pb-7">
-          <div>
-            <div className="text-lg text-zinc-400">Что вы ищете на самом деле</div>
-            <div className="mt-2 text-4xl font-semibold leading-tight">Не помощника, а правую руку</div>
-          </div>
-          <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-violet-400/30 bg-violet-500/10">
-            <Users className="h-7 w-7 text-violet-200" />
-          </div>
-        </div>
+                <div className={`${cardBase} relative overflow-hidden p-10 shadow-2xl xl:p-12`}>
+                  <div className="flex items-center justify-between border-b border-white/10 pb-7">
+                    <div>
+                      <div className="text-lg text-zinc-400">Что вы ищете на самом деле</div>
+                      <div className="mt-2 text-4xl font-semibold leading-tight">Не помощника, а правую руку</div>
+                    </div>
+                    <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-violet-400/30 bg-violet-500/10">
+                      <Users className="h-7 w-7 text-violet-200" />
+                    </div>
+                  </div>
 
-        <div className="mt-8 space-y-5">
-          {[
-            'Самостоятельность и зрелое мышление',
-            'Навык держать хаос, сроки и коммуникации',
-            'Умение брать на себя проектную и операционную нагрузку',
-            'Умение работать в логике бизнеса и принимать решения без постоянных указаний',
-          ].map((item) => (
-            <div
-              key={item}
-              className="flex items-start gap-4 rounded-[1.4rem] border border-white/15 bg-black/20 px-6 py-5"
-            >
-              <CheckCircle2 className="mt-0.5 h-6 w-6 shrink-0 text-violet-300" />
-              <p className="text-lg leading-8 text-zinc-300">{item}</p>
+                  <div className="mt-8 space-y-5">
+                    {[
+                      'Самостоятельность и зрелое мышление',
+                      'Навык держать хаос, сроки и коммуникации',
+                      'Умение брать на себя проектную и операционную нагрузку',
+                      'Умение работать в логике бизнеса и принимать решения без постоянных указаний',
+                    ].map((item) => (
+                      <div
+                        key={item}
+                        className="flex items-start gap-4 rounded-[1.4rem] border border-white/15 bg-black/20 px-6 py-5"
+                      >
+                        <CheckCircle2 className="mt-0.5 h-6 w-6 shrink-0 text-violet-300" />
+                        <p className="text-lg leading-8 text-zinc-300">{item}</p>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="mt-8 rounded-[1.6rem] border border-violet-400/20 bg-gradient-to-br from-violet-500/10 to-transparent p-7">
+                    <div className="text-lg text-violet-200">Ключевая мысль</div>
+                    <p className="mt-3 text-lg leading-8 text-zinc-200">
+                      Мы не про ассистентов, которые заказывают билеты. Мы про людей,
+                      которые могут возглавить задачу, собрать процесс и разгрузить
+                      собственника по-настоящему.
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
             </div>
-          ))}
-        </div>
-
-        <div className="mt-8 rounded-[1.6rem] border border-violet-400/20 bg-gradient-to-br from-violet-500/10 to-transparent p-7">
-          <div className="text-lg text-violet-200">Ключевая мысль</div>
-          <p className="mt-3 text-lg leading-8 text-zinc-200">
-            Мы не про ассистентов, которые заказывают билеты. Мы про людей,
-            которые могут возглавить задачу, собрать процесс и разгрузить
-            собственника по-настоящему.
-          </p>
-        </div>
-      </div>
-    </motion.div>
-  </div>
-</section>
+          </section>
 
           <section className={`${shell} py-24`}>
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={stagger}>
@@ -672,68 +672,80 @@ export default function BusinessAssistantLanding() {
           </section>
 
           <section className={`${shell} py-20 md:py-24`}>
-  <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={stagger}>
-    <SectionTitle
-      badge="Кто вам нужен на самом деле"
-      title="Обычный ассистент и сильная правая рука - это разные роли"
-      text="Именно это различие чаще всего определяет, станет ли найм усилением бизнеса или еще одной точкой контроля для собственника."
-      icon={Workflow}
-    />
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
+              variants={stagger}
+            >
+              <SectionTitle
+                badge="Кто вам нужен на самом деле"
+                title="Обычный ассистент и сильная правая рука — это разные роли"
+                text="Именно это различие чаще всего определяет, станет ли найм усилением бизнеса или еще одной точкой контроля для собственника."
+                icon={Workflow}
+              />
 
-    <motion.div variants={fadeUp} className="mt-12">
-      {/* Телефон */}
-      <div className="grid gap-4 md:hidden">
-        {compare.map((row, idx) => (
-          <div key={idx} className={`${cardBase} overflow-hidden`}>
-            <div className="border-b border-white/10 bg-white/[0.03] px-5 py-4 text-center text-[11px] font-semibold uppercase tracking-[0.14em] text-zinc-400">
-              Обычный ассистент
-            </div>
-            <div className="px-5 py-5 text-center text-sm leading-6 text-zinc-300">
-              {row.weak}
-            </div>
+              <motion.div variants={fadeUp} className="mt-12">
+                <div className="grid gap-4 md:hidden">
+                  {compare.map((row, idx) => (
+                    <div
+                      key={idx}
+                      className="overflow-hidden rounded-[1.6rem] border border-white/10 bg-white/[0.04] backdrop-blur"
+                    >
+                      <div className="grid divide-y divide-white/10">
+                        <div className="bg-white/[0.03] px-5 py-3 text-center text-[11px] font-semibold uppercase tracking-[0.16em] text-zinc-400">
+                          Обычный ассистент
+                        </div>
+                        <div className="px-5 py-5 text-center text-[15px] leading-6 text-zinc-300">
+                          {row.weak}
+                        </div>
 
-            <div className="border-y border-white/10 bg-white/[0.03] px-5 py-4 text-center text-[11px] font-semibold uppercase tracking-[0.14em] text-violet-200">
-              Сильный бизнес-ассистент
-            </div>
-            <div className="px-5 py-5 text-center text-sm leading-6 text-white">
-              {row.strong}
-            </div>
-          </div>
-        ))}
-      </div>
+                        <div className="bg-white/[0.03] px-5 py-3 text-center text-[11px] font-semibold uppercase tracking-[0.16em] text-violet-200">
+                          Сильный бизнес-ассистент
+                        </div>
+                        <div className="px-5 py-5 text-center text-[15px] leading-6 text-white">
+                          {row.strong}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
 
-      {/* Планшет / десктоп */}
-      <div className={`${cardBase} hidden overflow-hidden md:block`}>
-        <table className="w-full table-fixed border-collapse">
-          <thead>
-            <tr className="bg-white/[0.03]">
-              <th className="w-1/2 border-b border-r border-white/10 px-5 py-5 text-center align-middle text-sm font-semibold uppercase tracking-[0.16em] text-zinc-400 lg:px-7 lg:py-6 lg:text-base lg:tracking-[0.2em]">
-                Обычный ассистент
-              </th>
-              <th className="w-1/2 border-b border-white/10 px-5 py-5 text-center align-middle text-sm font-semibold uppercase tracking-[0.16em] text-violet-200 lg:px-7 lg:py-6 lg:text-base lg:tracking-[0.2em]">
-                Сильный бизнес-ассистент
-              </th>
-            </tr>
-          </thead>
+                <div className="hidden overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04] backdrop-blur md:block">
+                  <table className="w-full table-fixed border-collapse">
+                    <thead>
+                      <tr className="bg-white/[0.03]">
+                        <th className="w-1/2 border-b border-r border-white/10 px-6 py-5 text-center align-middle text-sm font-semibold uppercase tracking-[0.16em] text-zinc-400 lg:px-8 lg:py-6 lg:text-[15px] lg:tracking-[0.2em]">
+                          Обычный ассистент
+                        </th>
+                        <th className="w-1/2 border-b border-white/10 px-6 py-5 text-center align-middle text-sm font-semibold uppercase tracking-[0.16em] text-violet-200 lg:px-8 lg:py-6 lg:text-[15px] lg:tracking-[0.2em]">
+                          Сильный бизнес-ассистент
+                        </th>
+                      </tr>
+                    </thead>
 
-          <tbody>
-            {compare.map((row, idx) => (
-              <tr key={idx}>
-                <td className="w-1/2 border-b border-r border-white/10 px-5 py-5 text-center align-middle text-sm leading-7 text-zinc-400 lg:px-7 lg:py-6 lg:text-base lg:leading-8">
-                  <div className="mx-auto max-w-[85%] break-words">{row.weak}</div>
-                </td>
+                    <tbody>
+                      {compare.map((row, idx) => (
+                        <tr key={idx} className="align-stretch">
+                          <td className="w-1/2 border-b border-r border-white/10 px-6 py-6 text-center align-middle text-sm leading-7 text-zinc-400 lg:px-8 lg:py-7 lg:text-[17px] lg:leading-8">
+                            <div className="mx-auto max-w-[85%] break-words">
+                              {row.weak}
+                            </div>
+                          </td>
 
-                <td className="w-1/2 border-b border-white/10 px-5 py-5 text-center align-middle text-sm leading-7 text-zinc-200 lg:px-7 lg:py-6 lg:text-base lg:leading-8">
-                  <div className="mx-auto max-w-[85%] break-words">{row.strong}</div>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </motion.div>
-  </motion.div>
-</section>
+                          <td className="w-1/2 border-b border-white/10 px-6 py-6 text-center align-middle text-sm leading-7 text-zinc-200 lg:px-8 lg:py-7 lg:text-[17px] lg:leading-8">
+                            <div className="mx-auto max-w-[85%] break-words">
+                              {row.strong}
+                            </div>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </motion.div>
+            </motion.div>
+          </section>
 
           <section className={`${shell} py-24`}>
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={stagger}>
